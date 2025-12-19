@@ -26,4 +26,5 @@ with fetch_tab:
         if result == False:
             st.error("Invalid Account")
         else:
-            st.code(result)
+            st.write(f"Username: {result['username']}")
+            st.code(result['password'])
